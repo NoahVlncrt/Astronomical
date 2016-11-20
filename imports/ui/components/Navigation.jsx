@@ -13,13 +13,13 @@ export default class Navigation extends React.Component {
   
   handleToggle = () => this.setState({open: !this.state.open});
   handleClose = () => this.setState({open: false})
-  openSource = () => window.open("https://github.com/NoahVlncrt/Comet")
+  openSource = () => window.open("https://github.com/NoahVlncrt/Astronomical")
   
   render(){
     return (
       <div>
         <AppBar
-          title="Comet Material"
+          title="Astronomical"
           onLeftIconButtonTouchTap={this.handleToggle}/>
         <Drawer
           docked={false}

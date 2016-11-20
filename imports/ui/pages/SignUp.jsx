@@ -1,6 +1,5 @@
 import React from 'react';
 import { Accounts } from 'meteor/accounts-base';
-import { FlowRouter } from 'meteor/kadira:flow-router';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
 import { Card } from 'material-ui/Card';

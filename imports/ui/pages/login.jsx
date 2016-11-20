@@ -1,5 +1,4 @@
 import React from 'react';
-import { FlowRouter } from 'meteor/kadira:flow-router';
 import { Meteor } from 'meteor/meteor';
 
 import TextField from 'material-ui/TextField';
