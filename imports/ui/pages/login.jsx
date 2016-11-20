@@ -1,5 +1,6 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
+import { browserHistory} from 'react-router';
 
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
@@ -11,7 +12,7 @@ export default class LoginPage extends React.Component{
     email = document.getElementById('LoginEmail').value
     password = document.getElementById('LoginPassword').value
     Meteor.loginWithPassword(email,password)
-    FlowRouter.go('/')
+    browserHistory.push('/')
   }
   
   render(){

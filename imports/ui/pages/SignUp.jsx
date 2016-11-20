@@ -1,5 +1,6 @@
 import React from 'react';
 import { Accounts } from 'meteor/accounts-base';
+import { browserHistory } from 'react-router';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
 import { Card } from 'material-ui/Card';
@@ -25,7 +26,7 @@ export default class SignUpPage extends React.Component{
     }
     if(password === password2){
       Accounts.createUser(userData)
-      FlowRouter.go('/')
+      browserHistory.push('/')
     } else {
       this.setState({
         open: true,
