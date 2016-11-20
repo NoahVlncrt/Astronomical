@@ -25,7 +25,7 @@ export default class SignUpPage extends React.Component{
       password: password
     }
     if(password === password2){
-      Accounts.createUser(userData)
+      Meteor.call('createNewUser', userData)
       browserHistory.push('/')
     } else {
       this.setState({

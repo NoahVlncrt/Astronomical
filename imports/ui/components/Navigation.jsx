@@ -8,7 +8,10 @@ export default class Navigation extends React.Component {
   
   constructor(props) {
     super(props)
-    this.state = {open: false};
+    this.state = {open: false, loggedIn: false};
+    if(Meteor.user()){
+      this.setState({loggedIn: true})
+    }
   }
   
   handleToggle = () => this.setState({open: !this.state.open});
